@@ -30,5 +30,15 @@
         });
     }
 
+//    JavaScript => TypeScript ✨
+//    Optional Parameter
+
+    function printName (firstName: string, lastName?: string){
+        console.log(firstName)
+        console.log(lastName)
+    }
+    printName('Mina')
+    printName('Mina', undefined )
+
 
 }
