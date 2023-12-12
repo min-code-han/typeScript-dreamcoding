@@ -40,5 +40,20 @@
     printName('Mina')
     printName('Mina', undefined )
 
+//    Default Parameter
+    const printDefaultMessage = (message: string = "default message") => {
+        console.log(message)
+    }
+    printDefaultMessage()
+
+//    Rest Parameter - 인자 갯수에 대한 제한이 없음
+    const addRestNums = (...numbers:number[]):number => {
+        return numbers.reduce((a,b)=> a + b);
+    }
+    console.log(addRestNums(1,2))
+    console.log(addRestNums(1,2,3))
+    console.log(addRestNums(1,2,3,4))
+    console.log(addRestNums(1,2,3,4,5))
+
 
 }
